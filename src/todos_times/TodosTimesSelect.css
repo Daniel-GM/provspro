@@ -1,0 +1,21 @@
+.gradient-text {
+    background: linear-gradient(to right, blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-flex;
+}
+
+.gradient-text:hover {
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-flex;
+}
+
+.clicked {
+    cursor: pointer;
+}
+
+.d-flex {
+    align-items: center;
+}

@@ -21,7 +21,7 @@ if(response.status_code == 200):
             for idx, cell in enumerate(cells):
                 table_data[headers[idx]].append(cell.get_text(strip=True))
 
-    with open('./src/data/todos_times.json', 'w', encoding='utf-8') as json_file:
+    with open('./public/data/todos_times.json', 'w', encoding='utf-8') as json_file:
         json.dump(table_data, json_file, ensure_ascii=False, indent=4)
 
     print("Dados salvos em 'todos_times.json'")
